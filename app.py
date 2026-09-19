@@ -1,4 +1,5 @@
 from flask import Flask
+import i_broke_my_app
 app = Flask(__name__)
 
 @app.route('/health')
