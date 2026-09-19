@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/health')
 def hello():
     # Якщо в лабораторній замість ${custom_identifier} вказано конкретне значення - впишіть його
     return 'Hello from the environment ar11voam!'
