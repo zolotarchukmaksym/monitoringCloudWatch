@@ -1,2 +1,3 @@
 #!/bin/bash
-pkill -f app.py || true
+pkill -f "python3 app.py" || true
+exit 0
