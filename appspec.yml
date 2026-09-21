@@ -4,11 +4,6 @@ file_exists_behavior: OVERWRITE
 files:
   - source: /
     destination: /home/ec2-user/flask-app
-
-files:
-  - source: /
-    destination: /opt/flask-app
-
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
@@ -22,4 +17,3 @@ hooks:
     - location: scripts/start_server.sh
       timeout: 60
       runas: root
-  
