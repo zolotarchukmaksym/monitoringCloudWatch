@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/flask-app
-nohup python3 app.py > /home/ec2-user/flask-app/app.log 2>&1 &
+cd /opt/flask-app
+nohup python3 app.py > /var/log/flask-app.log 2>&1 < /dev/null &
+exit 0
