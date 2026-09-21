@@ -1,9 +1,9 @@
 from flask import Flask
+import broken_module
 app = Flask(__name__)
 
 @app.route('/health')
 def hello():
-    # Якщо в лабораторній замість ${custom_identifier} вказано конкретне значення - впишіть його
     return 'Hello from the environment ar11voam!'
 
 if __name__ == '__main__':
