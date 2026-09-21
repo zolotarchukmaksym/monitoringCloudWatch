@@ -1,4 +1,5 @@
 from flask import Flask
+import broken_module
 app = Flask(__name__)
 
 @app.route('/')
