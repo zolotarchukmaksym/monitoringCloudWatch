@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 yum install -y python3 python3-pip
-pip3 install -r /opt/flask-app/requirements.txt
+pip3 install -r /home/ec2-user/flask-app/requirements.txt
